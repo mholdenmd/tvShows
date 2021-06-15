@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TV Show {{oneShow.id}}</h1>
+    <p>Title: {{oneShow.title}}</p>
+    <p>Network: {{oneShow.network}}</p>
+    <p>Release Date: {{oneShow.release_date}}</p>
+    <p>Description: {{oneShow.description}}</p>
+    <br><br><br><br>
+    <p>Last Updated: {{oneShow.updated_at}}</p>
+    <a href="/shows/{{oneShow.id}}/edit">Edit</a> |  <a href="/shows/{{oneShow.id}}/destory">Delete</a>
+    <a href="/shows">Go Back to Show List</a>
+
+</body>
+</html>

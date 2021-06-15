@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>"Let go your earthly tether. Enter the void. Empty, and become wind."</h1>
+    <h1>Add a New Show</h1>
+    {% if messages %}        
+            {% for message in messages %}    
+            <p style= "color: red;">{{ message }}</p>
+    {% endfor %}
+</ul>
+{% endif %}
+    <form action="/shows/create" method="post">
+        {% csrf_token %}
+        <p>Title:<input type="text" name="tt"></p>
+        <p>Network:<input type="text" name="net"></p>
+        <p>Release Date:<input type="date" name="RDate"></p>
+        <p>Description:<textarea type="text" name="desc" cols="30" rows="10"></textarea></p>
+        <input type="submit" value="Submit New Show">
+    </form>
+    <a href="/shows">Go Back to Show List</a>
+
+</body>
+</html>

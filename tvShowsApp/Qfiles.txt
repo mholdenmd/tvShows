@@ -1,0 +1,5 @@
+from tvShowsApp.models import *
+
+TvShows.objects.create(title = "Starger Things", network = "Netflix")
+
+In the 80s, kids are going to a world that is dark and scary. Why and how did get there??? Ask the government...
